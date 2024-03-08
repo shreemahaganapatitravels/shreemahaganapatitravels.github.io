@@ -3,50 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahaganapati Tourist</title>
+    <title> Shree Mahaganapati Travels</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @media screen and (max-width: 576px) {
+            .card-body {
+                margin-top: -2px; 
+            }
+            .contact-details, .address {
+                width: 90%; 
+                margin-right: 20px;
+            }
+            .contact-details p {
+                max-height: 2em; 
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .address p {
+                max-height: 4em; 
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .nav-link{
+                text-align: center;
+            }
+}
+  </style>
 </head>
 <body>
-    <header>
-        <div class="header-left">
-            <h1> Shree Mahaganapati Travels</h1>
-        </div>
-        <div class="header-right">
-            <p><a href="tel:9986833770"></a><span class="phone-symbol">&#128222;</span> 9986833770</p>
-            <a href="https://www.google.com/maps/place/Shree+Mahaganapati+Travels/@14.625382,74.831894,15z/data=!4m2!3m1!1s0x0:0x577a241345545481?sa=X&ved=2ahUKEwjkhqrIpZuEAxWTRWcHHaflDBgQ_BJ6BAhQEAA">Get Directions</a>
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand d-none d-lg-inline" href="#">Shree Mahaganapati Travels</a>
+        <span class="navbar-brand d-lg-none" href="#" style="text-align: center; width: 100%;">Shree <br> Mahaganapati<br> Travels</span> <!-- For mobile -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav"></div>
+                    <a class="nav-link" href="tel:9986833770"><span>&#128222;</span> 9986833770</a>
+                    <a class="nav-link" href="https://www.google.com/maps/place/Shree+Mahaganapati+Travels/@14.625382,74.831894,15z/data=!4m2!3m1!1s0x0:0x577a241345545481?sa=X&ved=2ahUKEwjkhqrIpZuEAxWTRWcHHaflDBgQ_BJ6BAhQEAA">Get Directions</a>
         </div>
     </header>
-    <div class="image-container">
-        <img src="img.jpeg" alt="Description of your image" class="center-image">
-        <div class="image-text"><b></b>
-            <h2>Shree Mahaganapati Travels </h2>
-            <p><b>Address:</b> Koppal Colony Rd, Koppal Colony,<br> Sirsi, Karnataka 581401 </p>
-            <p><br>Opens 24 hrs</p>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="img.jpeg" alt="Description of your image" class="img-fluid">
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Shree Mahaganapati Travels</h2>
+                        <p class="card-text"><b>Address:</b> Koppal Colony Rd, Koppal Colony,<br> Sirsi, Karnataka 581401 </p>
+                        <p class="card-text"><br><b>Opens 24 hrs</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <section class="gallery">
-        <h2>Gallery</h2>
-        <div class="image-grid">
-            <img src="gallery/img1.jpeg" alt="Image 1">
-            <img src="gallery/img2.jpeg" alt="Image 2">
-            <img src="gallery/img3.jpeg" alt="Image 3">
-            <img src="gallery/img4.jpeg" alt="Image 4">
-            <img src="gallery/img5.jpeg" alt="Image 5">
-            <img src="gallery/img6.jpeg" alt="Image 6">
-         </div>
-    </section>
-    <footer>
-        <div class="contact-details">
-            <h3>Contact Details</h3>
-            <p><span class="phone-symbol">&#x260E;</span> Phone: 9986833770</p>
-            
+    <section class="gallery mt-5">
+        <div class="container">
+            <h2 class="text-center">Gallery</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="gallery/img1.jpeg" alt="Image 1" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="gallery/img2.jpeg" alt="Image 2" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="gallery/img3.jpeg" alt="Image 3" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="gallery/img4.jpg" alt="Image 4" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="gallery/img5.jpeg" alt="Image 5" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="gallery/img6.jpg" alt="Image 6" class="img-fluid">
+                </div>
+            </div>
         </div>
-        <div class="address">
-            <h3>Address</h3>
-            <p>Koppal Colony Rd, Koppal Colony,<br> Sirsi, Karnataka 581401 </p>
+    </section>
+    <footer class="bg-light mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <div class="contact-details">
+                        <h3 class="text-center">Contact Details</h3>
+                        <p class="text-center"><span>&#x260E;</span> Phone: 9986833770</p>
+                    </div>
+                </div> 
+                <div class="col-md-6">
+                    <div class="address">
+                        <h3>Address</h3>
+                        <p class="address">Koppal Colony,<br> Sirsi, Karnataka 581401 </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
-    
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
